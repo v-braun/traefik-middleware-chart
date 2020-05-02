@@ -1,14 +1,14 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
 metadata:
-  name: {{ template "traefik-middleware.fullname" . }}
+  name: {{ template "middleware.fullname" . }}
   annotations:
     {{- with .Values.ingressRoute.annotations }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
   labels:
-    app.kubernetes.io/name: {{ template "traefik-middleware.name" . }}
-    helm.sh/chart: {{ template "traefik-middleware.chart" . }}
+    app.kubernetes.io/name: {{ template "middleware.name" . }}
+    helm.sh/chart: {{ template "middleware.chart" . }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     {{- with .Values.labels }}

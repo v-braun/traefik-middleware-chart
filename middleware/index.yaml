@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  middleware:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-05-02T23:31:21.587297+02:00"
+    description: A Helm chart for Kubernetes
+    digest: f6ef4d5602323d1ee221f13473d17556ec788b26daf08115f530c5b99dab760e
+    name: middleware
+    type: application
+    urls:
+    - middleware-1.0.0.tgz
+    version: 1.0.0
+generated: "2020-05-02T23:31:21.583377+02:00"
