@@ -3,7 +3,7 @@ kind: Middleware
 metadata:
   name: {{ template "middleware.fullname" . }}
   annotations:
-    {{- with .Values.ingressRoute.annotations }}
+    {{- with .Values.annotations }}
     {{- toYaml . | nindent 4 }}
     {{- end }}
   labels:
